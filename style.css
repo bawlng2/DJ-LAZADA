@@ -1,0 +1,161 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: aquamarine;
+}
+
+h1, h2 {
+    text-align: center;
+    color: blueviolet;
+}
+
+p {
+    font-size: 1rem;
+    color: #333;
+    margin: 10px 0;
+}
+
+/* Header */
+header {
+    background: #e3f2fd;
+    padding: 20px 0;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin: 10px 0;
+    gap: 15px;
+}
+
+header nav ul li {
+    font-size: 1.2rem;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #0800ff;
+    transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+    color: #ff4500;
+}
+
+/* Main Section */
+main {
+    margin: 20px auto;
+    width: 90%;
+    max-width: 1200px;
+    background: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Article Styling */
+article {
+    margin-bottom: 30px;
+}
+
+section {
+    margin-bottom: 30px;
+}
+
+section h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+/* Image Styling */
+figure {
+    margin: 20px 0;
+    text-align: center;
+}
+
+figure img {
+    width: 100%;
+    max-width: 300px; /* Ensures images do not exceed 300px on large screens */
+    height: auto;
+    border-radius: 8px;
+}
+
+figure figcaption {
+    font-size: 1rem;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+/* Footer */
+footer {
+    background: #0800ff;
+    color: #fff;
+    text-align: center;
+    padding: 15px 0;
+}
+
+footer a {
+    color: #ffdf00;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    header nav ul {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    header nav ul li {
+        font-size: 1rem;
+    }
+
+    main {
+        padding: 15px;
+    }
+
+    section h2 {
+        font-size: 1.5rem;
+    }
+
+    figure img {
+        max-width: 100%; /* Ensures images fit within smaller screens */
+    }
+
+    footer {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    header nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    header nav ul li {
+        text-align: center;
+    }
+
+    section h2 {
+        font-size: 1.2rem;
+    }
+
+    figure img {
+        max-width: 100%;
+    }
+
+    footer {
+        font-size: 0.8rem;
+    }
+}

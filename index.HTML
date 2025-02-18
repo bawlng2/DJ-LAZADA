@@ -3,130 +3,216 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>All About Myself</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Mikerey Bernasor - Portfolio</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Header */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background: #222;
+            color: white;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+
+        /* Hero Section */
+        .hero {
+            background-image: url('banner.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-align: center;
+        }
+
+        .hero-content {
+            background: rgba(0, 0, 0, 0.5);
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        /* About Section */
+        #about {
+            display: flex;
+            align-items: center;
+            padding: 50px;
+        }
+
+        figure img {
+            width: 150px;
+            border-radius: 50%;
+            margin-right: 20px;
+        }
+
+        .bio {
+            max-width: 600px;
+        }
+
+        /* Projects Section */
+        .projects-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            padding: 50px;
+        }
+
+        article {
+            background: #f4f4f4;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        article img {
+            width: 100%;
+            border-radius: 5px;
+        }
+
+        /* Contact Section */
+        #contact {
+            text-align: center;
+            padding: 50px;
+        }
+
+        #contact form {
+            display: flex;
+            flex-direction: column;
+            max-width: 400px;
+            margin: auto;
+        }
+
+        #contact input, #contact textarea {
+            margin-bottom: 10px;
+            padding: 10px;
+            border: 1px solid #ccc;
+        }
+
+        button {
+            background: #222;
+            color: white;
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #222;
+            color: white;
+        }
+
+        .socials a {
+            margin: 0 10px;
+            color: white;
+            text-decoration: none;
+        }
+    </style>
 </head>
-<body style="background-color:rgb(195, 235, 219);">
-    <header id="top">
-        <h1 style="text-align: center; color:rgb(17, 15, 18);">My Portfolio</h1>
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>Mikerey Bernasor</h1>
         <nav>
             <ul>
- 
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
-    6
-    <hr>
-    <main>
-        <article id="about">
-            <section id="about_myself">
-                <h2 style="text-align: center;"> Welcome to my portfolio </h2>
-                <p>i'm passionate web developer creating baeutiful and functional websites.
 
-                </p>
-                <figure>
-                    <img src="me.jpg" alt="myself" height="250">
-                    >
-                    <p> 
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Welcome to My Portfolio</h1>
+            <p>I'm an IT student passionate about web development and software engineering.</p>
+        </div>
+    </section>
 
-                </figure>
-            </section>
-        </article>
+    <!-- About Me -->
+    <section id="about">
+        <figure>
+            <img src="profile.jpg" alt="Mikerey Bernasor">
+        </figure>
+        <div class="bio">
+            <h2>About Me</h2>
+            <p>I'm a sophomore IT student at Saint Michael College of Caraga, interested in software development and web technologies.</p>
+        </div>
+    </section>
 
-        <hr>
+    <!-- Projects -->
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="projects-container">
+            <article>
+                <img src="project1.jpg" alt="Project 1">
+                <h3>Hotel Reservation System</h3>
+                <p>A Java-based hotel booking system with a user-friendly interface.</p>
+            </article>
+            <article>
+                <img src="project2.jpg" alt="Project 2">
+                <h3>Online Business Permit System</h3>
+                <p>A web application for business permit applications in Nasipit.</p>
+            </article>
+            <article>
+                <img src="project3.jpg" alt="Project 3">
+                <h3>Street Vendor Permit System</h3>
+                <p>A permit management system for street vendors.</p>
+            </article>
+        </div>
+    </section>
 
-        <article id="life">
-            <section>
-                <h2 style="text-align: center;"> About Me </h2>
-                <P>hi ako diay si dj usa ka developer sa smcc</P>
-                <p>specialize in HTML,JAVASCRIPT.</p>
-                <figure>
-                    <img src="child.jpg" alt="" height="250">
-                    <figcaption style="font-weight: bold;">Childhood Experience</figcaption>
-                    <p> 
-            </section>
-            
-            <section>
-                <figure>
-                    <img src="teen.jpg" alt="teenage" height="250">
-                    <figcaption style="font-weight: bold;">Teenage Experience</figcaption>
-                    <p>
-                </figure>
-            </section>
+    <!-- Contact Section -->
+    <section id="cocontact">
+        <h2>Contact Me</h2>
+        <form>
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" placeholder="Your Message" required></textarea>
+            <button type="submit">Send</button>
+        </form>
+    </section>
 
-            <section>
-                <figure>
-                    <img src="adult.jpg" alt="adult" height="250">
-                    <figcaption style="font-weight: bold;">Adult Experience</figcaption>
-                    <p>
-            </section>
-        </article>
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Mikerey Bernasor</p>
+        <div class="socials">
+            <a href="#">Facebook</a>
+            <a href="#">LinkedIn</a>
+            <a href="#">GitHub</a>
+        </div>
+    </footer>
 
-        <hr>
-
-        <article id="hobbies">
-            <section>
-                <h2>Hobbies</h2>
-                <figure>
-                    <img src="indoor.jpg" alt="indoor" height="250">
-                    <figcaption style="font-weight: bold;">Indoor Hobbies</figcaption>
-                    <p></p>
-                </figure>
-                </section>
-            <section>
-                <figure>
-                    <img src="exercise.jpg" alt="outdoor" height="250">
-                    <figcaption style="font-weight: bold;">Outdoor Hobbies</figcaption>
-                    <p></p>
-                </figure>
-            </section>
-
-        </article>
-
-        <hr>
-
-        <article id="fave">
-            <section>
-                <h2>Favourites</h2>
-                <figure>
-                    <img src="parent.jpg" alt="parent" height="250">
-                    <figcaption style="font-weight: bold;">My Parents</figcaption>
-                    <p>
-            </section>
-            <section>
-                <figure>
-                    <img src="food.jpg" alt="food" height="250">
-                    <figcaption style="font-weight: bold;">Escabeche</figcaption>
-
-                </figure>
-            </section>
-        </article>
-
-        <hr>
-
-        <article id="friends">
-            <section>
-                <h2>Childhood Friends</h2>
-                <figure>
-                    <img src="childhoodfriends.jpg" alt="childhood" height="250">
-                </figure>
-            </section>
-            <section>
-                <h2>Closest Friend</h2>
-                <figure>
-                    <img src="closest.jpg" alt="closest" height="250">
-                </figure>
-            </section>
-
-        </article>
-
-        <hr>
-
-        <footer style="text-align: center;">
-            <p style="font-weight: bold;">All Rights Reserved &copy; DJ Lazada 2025</p>
-            <a href="#top" style="text-align: center;">Back to Top</a>
-
-        </footer>
-    </main>
 </body>
 </html>
